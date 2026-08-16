@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "filter-obj"
+version = "0.1.0"
+description = "Filter object (dict) keys and values with a simple predicate."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "thehackingpanda-official" }]
+keywords = ["filter", "dict", "object", "utility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/thehackingpanda-official/filter-obj"
+Repository = "https://github.com/thehackingpanda-official/filter-obj"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/filter_obj"]
